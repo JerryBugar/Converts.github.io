@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #27a5bb;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.options {
+    margin: 10px 0;
+}
+
+label {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+button.convert-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1203e7;
+    color: rgb(24, 39, 255);
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin: 10px 0;
+}
+
+button.convert-button:hover {
+    background-color: #303ce4;
+}
+
+textarea#outputText, textarea#outputFarmList {
+    margin-top: 20px;
+}

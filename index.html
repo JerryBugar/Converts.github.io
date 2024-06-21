@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Teks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Konversi Teks</h1>
+        <textarea id="inputText" placeholder="Masukkan teks di sini..."></textarea>
+        <div class="options">
+            <label>
+                <input type="radio" name="conversionType" value="colonToPipe" checked> : ke |
+            </label>
+            <label>
+                <input type="radio" name="conversionType" value="pipeToColon"> | ke :
+            </label>
+        </div>
+        <button class="convert-button" onclick="convertText()">Konversi</button>
+        <textarea id="outputText" readonly placeholder="Hasil konversi akan muncul di sini..."></textarea>
+        
+        <h1>Konversi Farm List</h1>
+        <textarea id="inputFarm" placeholder="Masukkan farm di sini..."></textarea>
+        <textarea id="inputDoor" placeholder="Masukkan ID door di sini..."></textarea>
+        <input type="text" id="inputSeed" placeholder="Masukkan farmable seed di sini...">
+        <button class="convert-button" onclick="convertFarmList()">Konversi Farm List</button>
+        <textarea id="outputFarmList" readonly placeholder="Hasil konversi akan muncul di sini..."></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
