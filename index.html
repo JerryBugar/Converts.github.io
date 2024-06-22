@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konversi Teks</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #75ff9c, #ff4395); /* Contoh gradasi dari pink ke oranye */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Mengatur tinggi container agar selalu penuh layar */
+        }
+        textarea, button {
+            margin: 10px; /* Menambahkan margin untuk memberi jarak antar elemen */
+            width: 60%; /* Mengatur lebar textarea dan button */
+        }
+        button {
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradasi warna baru untuk tombol */
+            color: white; /* Warna font untuk tombol */
+            border: none; /* Menghilangkan border */
+            padding: 10px 20px; /* Padding untuk membuat tombol lebih besar */
+            border-radius: 5px; /* Membuat sudut tombol menjadi bulat */
+            cursor: pointer; /* Mengubah cursor saat mengarah ke tombol */
+            transition: transform 0.3s ease; /* Animasi saat tombol diklik */
+        }
+        button:hover {
+            transform: scale(1.05); /* Membuat tombol sedikit lebih besar saat di-hover */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Konversi Teks</h1>
+        <h1>Konversi Growid</h1>
         <textarea id="inputText" placeholder="Masukkan teks di sini..."></textarea>
         <div class="options">
             <label>
